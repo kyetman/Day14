@@ -9,21 +9,21 @@ function greet() {
 }
 
 function trivia1() {
-    let triviaAnswer= document.getElementById("trivia1-answer");
+    let LieAnswer= document.getElementById("ttl-answer");
 
     //get values from form
-    let chocolateselected = document.getElementById("chocolate").checked;
-    let tunaselected = document.getElementById("tuna").checked;
-    let honeyselected = document.getElementById("honey").checked;
+    let truth1selected = document.getElementById("truth1").checked;
+    let lieselected = document.getElementById("lie").checked;
+    let truth2selected = document.getElementById("truth2").checked;
 
     // give result based off of what they selected
-    if (chocolateselected) {
-        triviaAnswer.innerHTML = fname + ", u suck L"
+    if (truth1selected) {
+        LieAnswer.innerHTML = "Incorrect, I am certified up to 60 feet deep."
     }
-    else if (tunaselected) {
-        triviaAnswer.innerHTML = fname + ", u suck L"
+    else if (lieselected) {
+        LieAnswer.innerHTML = "Correct! I have never been stung by a jellyfish, however, I have gotten close."
     }
-    else if (honeyselected) {
-        triviaAnswer.innerHTML = fname + ", ur right"
+    else if (truth2selected) {
+        LieAnswer.innerHTML = "Incorrect, I have been to 33 states, including most of the northern, eastern, and western states."
     }
 }

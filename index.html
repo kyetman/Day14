@@ -4,36 +4,20 @@
     <title>day14</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background-color:beige">
-    <h1>day 14</h1>
-    <hr>
-    <h2>Introductions</h2>
-    <form action="" id="name-form">
-        <label for="fname">First Name:</label>
-        <input type="text" name="fname" id="fname"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" name="lname" id="lname"><br>
-        <label for="age">Age:</label><br>
-        <input type="number" name="age" id="age">
-    </form>
-    <br>
-    <input type="button" value="submit" onclick="greet();">
-    <p id="greet" style="font-size: x-large;">Welcome</p>
-
-    <h2>trivia q</h2>
-    <p>what is the only food that connot go bad?</p>
-    <p id="trivia1-answer"></p>
+    <h1>Two truths and a Lie</h1>
+    <p>Which statement is the lie?</p>
     <form action="">
-        <input type="radio" name="trivia1" id="chocolate">
-        <label for="chocolate">dark chocolate</label><br>
-        <input type="radio" name="trivia1" id="tuna">
-        <label for="tuna">tuna</label><br>
-        <input type="radio" name="trivia1" id="honey">
-        <label for="honey">honey</label><br>
+        <input type="radio" name="trivia1" id="truth1">
+        <label for="truth1">I am scuba certified</label><br>
+        <input type="radio" name="trivia1" id="lie">
+        <label for="lie">I have been stung by a jellyfish</label><br>
+        <input type="radio" name="trivia1" id="truth2">
+        <label for="truth2">I have been to 33 states</label><br>
     </form>
     <input type="button" value="submit" onclick="trivia1();">
     <script src="js/day14.js"></script>
+    <p id="ttl-answer"></p>
 </body>
 </html>
